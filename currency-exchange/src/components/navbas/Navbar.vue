@@ -11,13 +11,10 @@ import { RouterLink } from 'vue-router'
           <h1 class="text-3xl font-bold text-sky-400 tracking-wide">Currency Exchange</h1>
         </div>
         
-        <!-- Menu horizontal -->
+        <!-- Horizontal Menu -->
         <div class="flex space-x-12">
           <RouterLink to="/" class="text-gray-400 hover:text-gray-600 font-medium transition-colors">Home</RouterLink>
           <RouterLink to="/exchange" class="text-gray-400 hover:text-gray-600 font-medium transition-colors">Exchange</RouterLink>
-          <RouterLink to="/blog" class="text-gray-400 hover:text-gray-600 font-medium transition-colors">Blog</RouterLink>
-          <RouterLink to="/team" class="text-gray-400 hover:text-gray-600 font-medium transition-colors">Team</RouterLink>
-          <RouterLink to="/about" class="text-gray-400 hover:text-gray-600 font-medium transition-colors">Info</RouterLink>
         </div>
       </div>
     </div>

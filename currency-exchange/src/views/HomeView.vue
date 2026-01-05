@@ -13,27 +13,27 @@ import TheWelcome from '../components/TheWelcome.vue'
           </h1>
           
           <p class="text-gray-500 text-lg leading-relaxed">
-            Vestibulum molestie nisl nec nunc viverra efficitur.
-            efficitur quam tristique rhoncus. Proin ut est lectus. 
-            Nunc quis sagittis porta.
+            Easily quote multiple currencies simultaneously in real time at no cost. Learn about all our services:
           </p>
           
           <!-- Features List -->
           <div class="space-y-4">
             <div class="flex items-center space-x-3">
               <div class="w-2 h-2 bg-sky-500 rounded-full"></div>
-              <p class="text-gray-700">Fusce luctus blandit nus.</p>
+              <p class="text-gray-700">Quote for multiple currencies.</p>
             </div>
             <div class="flex items-center space-x-3">
               <div class="w-2 h-2 bg-sky-500 rounded-full"></div>
-              <p class="text-gray-700">Ut imperdiet dui et tincidunt mattis.</p>
+              <p class="text-gray-700">Export your results to various formats.</p>
             </div>
           </div>
           
           <!-- Button -->
-          <button class="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-4 rounded-full uppercase tracking-wide transition-colors shadow-lg">
-            Get Started
-          </button>
+          <RouterLink to="/exchange" class="inline-block">
+            <button class="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-4 rounded-full uppercase tracking-wide transition-colors shadow-lg">
+              Get Started
+            </button>
+          </RouterLink>
         </div>
         
         <!-- Right Side - Image/Illustration -->
