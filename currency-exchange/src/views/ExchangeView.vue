@@ -142,7 +142,7 @@ const refreshRates = async () => {
   
   // Recalculate all currency values based on the first currency
   if (configStore.exchangeConfigData.length > 0 && exchangeStore.exchangeData) {
-    const firstCurrency = configStore.exchangeConfigData[0]
+    const firstCurrency = configStore.exchangeConfigData[0] || ''
     const firstValue = currencyValues.value[firstCurrency] || 1
     
     // Trigger recalculation
@@ -167,9 +167,9 @@ const reconfigureCurrencies = () => {
 }
 
 // Format number with thousands separator (.) and decimal separator (,)
-const formatCurrency = (value: number): string => {
-  const parts = value.toFixed(2).split('.')
-  const integerPart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.')
+const formatCurrency = (value: number): string => {  
+  const parts = value.toFixed(2).split('.') || []
+  const integerPart = parts[0]?.replace(/\B(?=(\d{3})+(?!\d))/g, '.')
   const decimalPart = parts[1]
   return `${integerPart},${decimalPart}`
 }
