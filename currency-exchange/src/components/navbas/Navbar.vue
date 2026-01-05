@@ -15,6 +15,7 @@ import { RouterLink } from 'vue-router'
         <div class="flex space-x-12">
           <RouterLink to="/" class="text-gray-400 hover:text-gray-600 font-medium transition-colors">Home</RouterLink>
           <RouterLink to="/exchange" class="text-gray-400 hover:text-gray-600 font-medium transition-colors">Exchange</RouterLink>
+          <RouterLink to="/info" class="text-gray-400 hover:text-gray-600 font-medium transition-colors">Info</RouterLink>
         </div>
       </div>
     </div>

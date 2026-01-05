@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/exchange',
       name: 'exchange',
       component: () => import('../views/ExchangeView.vue'),
+    },
+    {
+      path: '/info',
+      name: 'info',
+      component: () => import('../views/InfoView.vue'),
     }
   ],
 })
